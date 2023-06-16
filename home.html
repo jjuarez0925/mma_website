@@ -21,8 +21,7 @@
 <body>
     <nav class="navbar navbar-dark bg-dark navbar-expand-sm sticky-top">
         <div class="container"> <!--Nav Bar contents-->
-            <div class="row">
-                <div class="col ">
+
                     <a class="navbar-brand " href="#"><img src="img/02.png" height="35" width="35" /></a>
                     <button class="navbar toggler" type="button" data-toggle="collapse" data-target="#mmaNavbar">
                         <span class="navbar-toggler-icon"></span>
@@ -37,26 +36,22 @@
                         </ul>
                     </div>
                 </div>
-            <!--  xs, s - make button jump onto next line-->
-                <div class="col ">
+                <div class="col-md-3 col-sm-3 col-xs-3 mx-auto">  <!-- after 780x910 px search bar doesn't jump on the next line and the website starts to have a horizontal scrolling becvause of it-->
                     <input class="form-control" type="search" placeholder="how can we help?" aria-label="Search">
                 </div>
-                <div class="col ">
+                <div class="col mx-auto"> <!--the search button needs to be on the same line as the search bar in s, xs--> 
                    <button class="btn btn-secondary" type="submit">Search</button> 
                 </div>
-            </div>
-        </div>
      </div>
    </nav>
 
 <!--jumbotron-->
       <div class="card-bg-dark text-white">
-         <!--this was jumbotron <p class="lead">We can put some motivational text here or description of image above</p>-->
-            <img src="img/dave-contreras-R1PUDOAhb5Q-unsplash.jpg" class="card-img">
-            <div class="card-img-overlay">
-             <h1 class="card-title">LEARN TO FIGHT</h1>
+             <img src="img/dave-contreras-R1PUDOAhb5Q-unsplash.jpg" class="card-img"/>
+             <div class="card-img mx-auto" style="width: 370px;"> <!--if we add card-img-overlay, image moves under the nav bar and so does the "learn to fight text. how do we center the text on top of the image?"-->
+               <h1 class="card-title">LEARN TO FIGHT</h1>
              </div>
-        </div>
+      </div>
 
  <!--  Welcome section: w cols: text w 3 rows in one, pic in the other -->
 
