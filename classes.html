@@ -2,15 +2,17 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Required meta tags always come firsnpmt -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--not sure we need this line-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
 
     <!-- Additional CSS must be placed after Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
     <link rel="stylesheet" href="css/styles.css" />
 
@@ -19,11 +21,39 @@
 
 <body>
 
-    <div class="container">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-sm sticky-top">
+        <div class="container"> <!--Nav Bar contents-->
+
+            <a class="navbar-brand " href="#"><img src="img/02.png" height="35" width="35" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mmaNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mmaNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="home.html"> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="classes.html"> Class Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testimonials.html"></i> Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactus.html"> Contact Us</a></li>
+                </ul>
+            </div>
+        
+        <div class="col-md-3 col-sm-3 col-xs-3 mx-auto">
+            <!-- after 780x910 px search bar doesn't jump on the next line and the website starts to have a horizontal scrolling becvause of it-->
+            <input class="form-control" type="search" placeholder="how can we help?" aria-label="Search">
+        </div>
+        <div class="col mx-auto"> <!--the search button needs to be on the same line as the search bar in s, xs-->
+            <button class="btn btn-secondary" type="submit">Search</button>
+        </div>
+        </div>
+    </div>
+    </nav>
+
+    <div class="container pt-1">
         <div class="row">
             <div class="col">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <ol class="breadcrumb bg-dark" id="breadcrumbs">
+                    <li class="breadcrumb-item"><a href="home.html">Home</a></li>
                     <li class="breadcrumb-item active">Class Schedule</li>
                 </ol>
                 <h1>CLASS SCHEDULE</h1>
@@ -38,7 +68,7 @@
             <div class="col col-sm-4 pb-5">
                 <h2>Monday</h2>
                 <div id="accordion">
-                    <div class="card">
+                    <div class="card bg-dark">
                         <div role="tab" class="card-header">
                             <h4>
                                 <a class="collapsed" data-toggle="collapse" data-target="#fightcon0">
@@ -55,7 +85,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card bg-dark">
                         <div role="tab" class="card-header">
                             <h4>
                                 <a class="collapsed" data-toggle="collapse" data-target="#prospar0">
@@ -72,7 +102,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card bg-dark">
                         <div role="tab" class="card-header">
                             <h4>
                                 <a class="collapsed" data-toggle="collapse" data-target="#wrestling0">
@@ -89,7 +119,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card bg-dark">
                         <div role="tab" class="card-header">
                             <h4>
                                 <a class="collapsed" data-toggle="collapse" data-target="#mmadrills0">
@@ -106,7 +136,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card bg-dark">
                         <div role="tab" class="card-header">
                             <h4>
                                 <a class="collapsed" data-toggle="collapse" data-target="#striking0">
@@ -123,7 +153,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card bg-dark">
                         <div role="tab" class="card-header">
                             <h4>
                                 <a class="collapsed" data-toggle="collapse" data-target="#youngathlete0">
@@ -141,12 +171,12 @@
                         </div>
                     </div>
                 </div>
-            </div> 
+            </div>
 
             <div class="col col-sm-4 pb-5">
                 <h2>Tuesday</h2>
                 <div id="accordion1">
-                    <div class="card">
+                    <div class="card bg-dark">
                         <div role="tab" class="card-header">
                             <h4>
                                 <a class="collapsed" data-toggle="collapse" data-target="#mmafund0">
@@ -163,7 +193,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card bg-dark">
                         <div role="tab" class="card-header">
                             <h4>
                                 <a class="collapsed" data-toggle="collapse" data-target="#prodrills0">
@@ -180,7 +210,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card bg-dark">
                         <div role="tab" class="card-header">
                             <h4>
                                 <a class="collapsed" data-toggle="collapse" data-target="#grappling0">
@@ -197,7 +227,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card bg-dark">
                         <div role="tab" class="card-header">
                             <h4>
                                 <a class="collapsed" data-toggle="collapse" data-target="#mmasparring0">
@@ -214,7 +244,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card bg-dark">
                         <div role="tab" class="card-header">
                             <h4>
                                 <a class="collapsed" data-toggle="collapse" data-target="#prostriking0">
@@ -231,7 +261,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card bg-dark">
                         <div role="tab" class="card-header">
                             <h4>
                                 <a class="collapsed" data-toggle="collapse" data-target="#youngathlete1">
@@ -254,7 +284,7 @@
             <div class="col col-sm-4 pb-5">
                 <h2>Wednesday</h2>
                 <div id="accordion2">
-                    <div class="card">
+                    <div class="card bg-dark">
                         <div role="tab" class="card-header">
                             <h4>
                                 <a class="collapsed" data-toggle="collapse" data-target="#fightcon01">
@@ -271,7 +301,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card bg-dark">
                         <div role="tab" class="card-header">
                             <h4>
                                 <a class="collapsed" data-toggle="collapse" data-target="#prospar01">
@@ -288,7 +318,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card bg-dark">
                         <div role="tab" class="card-header">
                             <h4>
                                 <a class="collapsed" data-toggle="collapse" data-target="#wrestling01">
@@ -305,7 +335,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card bg-dark">
                         <div role="tab" class="card-header">
                             <h4>
                                 <a class="collapsed" data-toggle="collapse" data-target="#mmadrills01">
@@ -322,7 +352,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card bg-dark">
                         <div role="tab" class="card-header">
                             <h4>
                                 <a class="collapsed" data-toggle="collapse" data-target="#striking01">
@@ -339,7 +369,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card bg-dark">
                         <div role="tab" class="card-header">
                             <h4>
                                 <a class="collapsed" data-toggle="collapse" data-target="#youngathlete01">
@@ -366,7 +396,7 @@
             <div class="col col-sm-4 pb-5">
                 <h2>Thursday</h2>
                 <div id="accordion4">
-                    <div class="card">
+                    <div class="card bg-dark">
                         <div role="tab" class="card-header">
                             <h4>
                                 <a class="collapsed" data-toggle="collapse" data-target="#fightcon02">
@@ -383,7 +413,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card bg-dark">
                         <div role="tab" class="card-header">
                             <h4>
                                 <a class="collapsed" data-toggle="collapse" data-target="#prospar02">
@@ -400,7 +430,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card bg-dark">
                         <div role="tab" class="card-header">
                             <h4>
                                 <a class="collapsed" data-toggle="collapse" data-target="#wrestling02">
@@ -417,7 +447,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card bg-dark">
                         <div role="tab" class="card-header">
                             <h4>
                                 <a class="collapsed" data-toggle="collapse" data-target="#mmadrills02">
@@ -434,7 +464,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card bg-dark">
                         <div role="tab" class="card-header">
                             <h4>
                                 <a class="collapsed" data-toggle="collapse" data-target="#striking02">
@@ -451,7 +481,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card bg-dark">
                         <div role="tab" class="card-header">
                             <h4>
                                 <a class="collapsed" data-toggle="collapse" data-target="#youngathlete02">
@@ -474,7 +504,7 @@
             <div class="col col-sm-4 pb-5">
                 <h2>Friday</h2>
                 <div id="accordion5">
-                    <div class="card">
+                    <div class="card bg-dark">
                         <div role="tab" class="card-header">
                             <h4>
                                 <a class="collapsed" data-toggle="collapse" data-target="#mmafund05">
@@ -491,7 +521,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card bg-dark">
                         <div role="tab" class="card-header">
                             <h4>
                                 <a class="collapsed" data-toggle="collapse" data-target="#prodrills05">
@@ -508,7 +538,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card bg-dark">
                         <div role="tab" class="card-header">
                             <h4>
                                 <a class="collapsed" data-toggle="collapse" data-target="#grappling05">
@@ -525,7 +555,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card bg-dark">
                         <div role="tab" class="card-header">
                             <h4>
                                 <a class="collapsed" data-toggle="collapse" data-target="#mmasparring05">
@@ -542,7 +572,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card bg-dark">
                         <div role="tab" class="card-header">
                             <h4>
                                 <a class="collapsed" data-toggle="collapse" data-target="#prostriking05">
@@ -559,7 +589,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card bg-dark">
                         <div role="tab" class="card-header">
                             <h4>
                                 <a class="collapsed" data-toggle="collapse" data-target="#youngathlete05">
@@ -582,7 +612,7 @@
             <div class="col col-sm-4 pb-5">
                 <h2>Saturday</h2>
                 <div id="accordion6">
-                    <div class="card">
+                    <div class="card bg-dark">
                         <div role="tab" class="card-header">
                             <h4>
                                 <a class="collapsed" data-toggle="collapse" data-target="#fightcon06">
@@ -599,7 +629,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card bg-dark">
                         <div role="tab" class="card-header">
                             <h4>
                                 <a class="collapsed" data-toggle="collapse" data-target="#prospar06">
@@ -616,7 +646,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card bg-dark">
                         <div role="tab" class="card-header">
                             <h4>
                                 <a class="collapsed" data-toggle="collapse" data-target="#wrestling06">
@@ -633,7 +663,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card bg-dark">
                         <div role="tab" class="card-header">
                             <h4>
                                 <a class="collapsed" data-toggle="collapse" data-target="#mmadrills06">
@@ -650,7 +680,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card bg-dark">
                         <div role="tab" class="card-header">
                             <h4>
                                 <a class="collapsed" data-toggle="collapse" data-target="#striking06">
@@ -667,7 +697,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card bg-dark">
                         <div role="tab" class="card-header">
                             <h4>
                                 <a class="collapsed" data-toggle="collapse" data-target="#youngathlete06">
@@ -686,10 +716,41 @@
                     </div>
                 </div>
             </div>
-
         </div>
-
     </div>
+
+    <footer>
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-4 col-sm-2 offset-1">
+                    <h5>Links</h5>
+                    <ul class="list unstyled">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="classes.html">Class Schedule</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-5 text-center">
+                    <h5>Social</h5>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
+                            class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
+                            class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+                            class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
+                            class="fa fa-youtube"></i></a>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i>
+                        1-206-555-1234</a><br />
+                    <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i
+                            class="fa fa-envelope-o"></i> mma@mmaacademy.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
